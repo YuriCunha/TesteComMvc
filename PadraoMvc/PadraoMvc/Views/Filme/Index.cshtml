@@ -1,0 +1,22 @@
+﻿@model List<Produto>;
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <br />
+
+        <ul>
+
+            @foreach (var filme in Model)
+            {
+                <li>@(filme.Titulo) - @(filme.Categoria)</li>
+            }
+
+        </ul>
+
+        <button> <a asp-action="novo">Adicionar</a></button>
+
+    </body>
+    </html>
